@@ -2,7 +2,7 @@ $Blue: hsl(223, 87%, 63%);
 
 $Pale-Blue: hsl(223, 100%, 88%);
 $Light-Red: hsl(354, 100%, 66%);
-
+$Pale-Blue2: hsl(223, 47%, 93%);
 
 $Gray: hsl(0, 0%, 59%);
 $Very-Dark-Blue: hsl(209, 33%, 12%);
@@ -18,7 +18,7 @@ $bold:700;
     width: 23.43rem;
     height: 50.75rem;
     padding: 5.25rem 1.72rem 2.18rem 1.72rem;
-    background: #fff;
+    background: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,6 +46,15 @@ $bold:700;
        form{
         display: flex;
         flex-direction: column;
+        p{
+            margin-bottom: 1rem;
+            margin-top: -0.5rem;
+            display: flex;
+            align-content: flex-end;
+            justify-content: flex-end;
+            align-items: center;
+            color:$Light-Red;
+        }
         input::placeholder{
             padding-left: 2rem;
         }
@@ -62,6 +71,7 @@ $bold:700;
             font-weight: $light;
             font-size: 1rem;
             letter-spacing: 0.1rem;
+            box-shadow: 0px 6px 11px 0px rgba(127,148,212,1);
         }
        }
     }
@@ -83,9 +93,78 @@ $bold:700;
                 width: 2rem;
                 height: 2rem;
             }
+            i:hover{
+                cursor: pointer;
+            }
         }
         p{
             color: $Gray;
         }
     }
+}
+
+@media (min-width:90rem){
+   .ping-card{
+    width: 40rem;
+    height: 58rem;
+    padding: 8% 27% 5% 27%;
+    h1{
+        margin-top: 2.65rem;
+        margin-bottom: 1.31rem;
+        font-size: 3rem;
+        width: 40rem;
+        text-align: center;
+    }
+    p{
+        margin-bottom: 2rem;
+    }
+    .ping-card-form{
+       form{
+        display: flex;
+        flex-direction: row;
+        input::placeholder{
+            padding-left: 2rem;
+        }
+        p{
+            margin-bottom: 0rem;
+            margin-top: -1rem;
+        }
+        .pcdd{
+            width: 23.43rem;
+            height: 2.53rem;
+            margin-bottom: 0.6rem;
+            border-radius: 1.2rem;
+            margin-right: 1rem;
+        }
+        .pcdb{
+            width: 8.68rem;
+            font-size: 1rem;
+        }
+       }
+    }
+    .ping-card-dashboard{
+        margin-top: 4.47rem;
+        img{
+            width: 40rem;
+            height: 24rem;
+        }
+    }
+    .ping-card-copyright{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .icons{
+            margin-top: 4.47rem;
+            color:$Blue;
+            i{
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+        p{
+            color: $Gray;
+        }
+    }
+}
+   
 }
