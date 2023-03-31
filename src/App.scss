@@ -1,0 +1,91 @@
+$Blue: hsl(223, 87%, 63%);
+
+$Pale-Blue: hsl(223, 100%, 88%);
+$Light-Red: hsl(354, 100%, 66%);
+
+
+$Gray: hsl(0, 0%, 59%);
+$Very-Dark-Blue: hsl(209, 33%, 12%);
+
+$Font-size: 20px;
+
+$Family: 'Libre Franklin';
+$light:300;
+$medium:600;
+$bold:700;
+
+.ping-card{
+    width: 23.43rem;
+    height: 50.75rem;
+    padding: 5.25rem 1.72rem 2.18rem 1.72rem;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img{
+        width: 3.47rem;
+        height: 1rem;
+    }
+    h1{
+        margin-top: 2.65rem;
+        margin-bottom: 1.31rem;
+        font-size: 1.5rem;
+        font-weight: $light;
+        color: $Gray;
+        span{
+            font-weight: $bold;
+            color: $Very-Dark-Blue;
+        }
+    }
+    p{
+        margin-bottom: 2rem;
+        color: $Very-Dark-Blue;
+    }
+    .ping-card-form{
+       form{
+        display: flex;
+        flex-direction: column;
+        input::placeholder{
+            padding-left: 2rem;
+        }
+        .pcd{
+            width: 17.62rem;
+            height: 2.53rem;
+            margin-bottom: 0.6rem;
+            border-radius: 1.2rem;
+            border: 1px solid $Pale-Blue;
+        }
+        button{
+            background: $Blue;
+            color: #fff;
+            font-weight: $light;
+            font-size: 1rem;
+            letter-spacing: 0.1rem;
+        }
+       }
+    }
+    .ping-card-dashboard{
+        margin-top: 4.47rem;
+        img{
+            width: 20rem;
+            height: 12.15rem;
+        }
+    }
+    .ping-card-copyright{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .icons{
+            margin-top: 7.47rem;
+            color:$Blue;
+            i{
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+        p{
+            color: $Gray;
+        }
+    }
+}

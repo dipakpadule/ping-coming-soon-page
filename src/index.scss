@@ -1,0 +1,28 @@
+$Blue: hsl(223, 87%, 63%);
+
+$Pale-Blue: hsl(223, 47%, 93%);
+$Light-Red: hsl(354, 100%, 66%);
+
+
+$Gray: hsl(0, 0%, 59%);
+$Very-Dark-Blue: hsl(209, 33%, 12%);
+
+$Font-size: 20px;
+
+$Family: 'Libre Franklin';
+$light:300;
+$medium:600;
+$bold:700;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: $Family;
+  min-height: 100%;
+  display: grid;
+  place-items: center;
+  background: $Pale-Blue;
+}
